@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: staging
+    database:
+      dtc-de-418710
+      # For postgres:
+      #database: production
+    schema:
+      taxi_data
+
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: taxi_green-2019-2020
+
+      - name:
+          taxi-yellow-2019-2020
+
+          # freshness:
+          # error_after: {count: 6, period: hour}
